@@ -41,7 +41,6 @@ resource "aws_instance" "web" {
               EOF
 }
 
-
 resource "aws_security_group" "web-sg" {
   name = "${random_pet.sg.id}-sg"
   ingress {
